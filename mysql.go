@@ -14,8 +14,10 @@ const (
 	USERNAME = "root"
 	PASSWORD = "root"
 	NETWORK  = "tcp"
-	SERVER   = "127.0.0.1"
-	PORT     = 3307
+	// SERVER   = "127.0.0.1"
+	// docker-compose 裡面有自己的 dns，api 如果在 docker 裡面  不能用127.0.0.1
+	SERVER   = "mysql"
+	PORT     = 3306
 	DATABASE = "practice"
 )
 

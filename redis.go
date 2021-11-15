@@ -14,7 +14,9 @@ const ViewCount = "viewcount"
 
 func ConnectRedis() {
 	RedisDB = redis.NewClient(&redis.Options{
-		Addr: "0.0.0.0:7001",
+		// Addr: "0.0.0.0:7001",
+		// docker-compose 裡面有自己的 dns，api 如果在 docker 裡面  不能用127.0.0.1
+		Addr: "redis:6379",
 		Password: "", // no password set
 		DB:       0,  // use default DB
 	})

@@ -22,7 +22,7 @@ services:
     app:
         build:
             context: .
-            dockerfile: app.Dockerfile
+            dockerfile: Dockerfile
         depends_on:
             - mysql
             - redis
@@ -30,5 +30,4 @@ services:
             - 8080:8080
         restart: always
         container_name: app
-        command: ["./wait-for-it.sh", "mysql:3307", "--", "go", "run", "."]
 
