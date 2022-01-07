@@ -8,7 +8,7 @@
 ### Installing steps:
 1. Clone project
 ```shell
-git clone https://github.com/ai285063/member_app_gin.git
+git clone https://github.com/ai285063/member-app-using-go-gin.git
 ```
 
 2. Start testing by setting up containers using docker-compose
