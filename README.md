@@ -20,9 +20,9 @@ docker-compose up
 3. Test routes on Postman
 
 ### Routes:
-- [GET] all users [localhost:8080/users](http://localhost:8080/users)
-- [POST] new register [localhost:8080/users/register](http://localhost:8080/users/register)
-  - body required fields:
-    - account, email, password
-- [PUT] user [http://localhost:8080/users/:id](http://localhost:8080/users/:id)
-- [DELETE] user [http://localhost:8080/users/:id](http://localhost:8080/users/:id)
+| Method  |   | Route  |
+|---|---|---|
+| GET  | get all users  | [localhost:8080/users](http://localhost:8080/users)  |
+| POST | create new register <br> - required fields in body: account, email, password | [localhost:8080/users/register](http://localhost:8080/users/register)  |
+| PUT  | update user |  [http://localhost:8080/users/:id](http://localhost:8080/users/:id) |
+| DELETE  | delete user  |  [http://localhost:8080/users/:id](http://localhost:8080/users/:id) |
